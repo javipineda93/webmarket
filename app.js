@@ -202,7 +202,7 @@ function mostrarImagenwp(){
     wd.addEventListener('click', ()=>{
         //generar la imagen
     const imagen = document.createElement('IMG');
-    imagen.src = `wp.jpg`;
+    imagen.src = `./wp.jpg`;
     console.log(imagen);
 
     const overlay = document.createElement('DIV');
@@ -241,7 +241,7 @@ function mostrarImagenjl(){
     wd.addEventListener('click', ()=>{
         //generar la imagen
     const imagen = document.createElement('IMG');
-    imagen.src = `joomla.png`;
+    imagen.src = `./joomla.png`;
     console.log(imagen);
 
     const overlay = document.createElement('DIV');
@@ -279,7 +279,7 @@ function mostrarImagenqr(){
     wd.addEventListener('click', ()=>{
         //generar la imagen
     const imagen = document.createElement('IMG');
-    imagen.src = `qr.png`;
+    imagen.src = `./qr.png`;
     console.log(imagen);
 
     const overlay = document.createElement('DIV');
