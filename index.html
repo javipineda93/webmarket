@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Ejercicio Cajas</title>
+</head>
+
+<body>
+    <header id="head" class="cabecera">
+        <div class="titulo">
+            <h2>ULTRAMARINOS MACARENO</h2>
+            <H3>REY DEL DESENFRENO</H3>
+        </div>
+
+        <div class="modo-noche">
+            <img id="modo-noche" src="dark-mode.svg" alt="modo-noche">
+            <button id="botonDia" class="hidden">Posponer Asalto</button>
+            <div class="menu">
+                <button id="wp">Wordpress</button>
+                <button id="jl">Joomla</button>
+                <button id="qr">QR</button>
+            </div>
+        </div>
+
+    </header>
+
+    <main class="main div1" >
+        <div class="aviso hidden">
+            <h3>¡¡Arto ahí maleante, esto está cerrao!!¿¿Donde cree usté que va a estas horas??</h3>
+        </div>
+        <div class="supermercado super">
+            <div class="padre">
+                <div class="caja1 caja" id="caja1"><p id="contador1">Caja 1 </p> </div>
+                <input type="button" id="atenderCaja1" class="botonAtender hidden" value="Atender Cliente">
+            </div>
+            <div class="padre">                
+                <div class="caja2 caja" id="caja2"><p id="contador2">Caja 2 </p> </div>
+                <input type="button" id="atenderCaja2" class="botonAtender hidden" value="Atender Cliente">
+            </div>
+            
+            <div class="padre">               
+                <div class="caja3 caja" id="caja3"><p id="contador3">Caja 3 </p> </div>
+                <input type="button" id="atenderCaja3" class="botonAtender hidden" value="Atender Cliente">
+            </div>
+            
+            <div class="padre">  
+                <div class="caja4 caja" id="caja4"><p id="contador4">Caja 4 </p> </div>
+                <input type="button" id="atenderCaja4" class="botonAtender hidden" value="Atender Cliente">
+            </div>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>

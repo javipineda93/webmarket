@@ -1,0 +1,268 @@
+/* BOX MODEL */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+
+body{
+    line-height: 1.5;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    
+}
+
+.cabecera{
+    padding: 2rem;   
+}
+
+header{
+    width: 100%;
+    background: rgb(122,246,234);
+    background: radial-gradient(circle, rgba(122,246,234,1) 0%, rgba(63,203,251,1) 100%);
+    border: 5px ghostwhite solid;
+}
+button{
+    margin-right: 1rem;
+    margin-left: 3rem;
+    padding: 1rem;
+    width: 13rem;
+    background: none;
+    border: 0;
+    font-size: 2rem;
+    cursor: pointer;
+}
+button:hover{
+    background-color:aliceblue;
+}
+.back{
+    width:100%;
+    height: 100%;
+    background-image: url(/superImage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+p{
+    font-size: 2rem;
+    font-family: 'Pacifico', cursive;
+    color:#000;
+    font-weight: bold;
+    text-transform: uppercase;
+
+} 
+ h2{
+    
+    font-family:'Pacifico', cursive;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+h3{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+    font-size:3rem;
+    font-weight: bold;
+    text-align: center; 
+} 
+
+.supermercado{
+    margin:5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    
+}
+
+@media(min-width: 300px){
+    .supermercado{    
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    }
+}
+
+
+@media(min-width: 600px){
+    .supermercado{
+    width: 100%;
+    height:70rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    }
+  
+}
+@media(max-width:600px){
+    .cabecera{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.caja{
+    padding: 5rem;
+    border: .5rem solid #000;
+    margin: 1rem;
+    background-color:chartreuse;
+    opacity: 90%;
+    width: 20rem;
+    height: 20rem;
+    cursor: pointer;
+    
+}
+.seccion-agregar{
+    display: block;
+    gap: 3rem;
+    max-width: 90%;
+    margin: 1rem;
+}
+
+@media (min-width:720px){
+
+    .seccion-agregar{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    gap: 10px;
+    align-items: center;
+    max-width: fit-content;
+    margin-left: 40rem;
+    }
+    
+}
+.botonAgregar{
+    width: 20rem;
+    height: 5rem;
+    padding: 10px;
+    font-size: 1.5rem;
+       
+}
+.botonEliminar{
+    width: 20rem;
+    height: 5rem;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+.seleccion-caja{
+    font-size: 1.5rem;
+}
+.lleno{
+    background-color: orangered;
+}
+.libre{
+    background-color: chartreuse;
+}
+
+.padre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.botonAtender{
+    font-size: 2rem;
+    font-weight: bolder;
+    border-radius: 1rem;
+    padding: 2rem;
+    cursor: pointer;
+
+    
+}
+.botonAtender:hover{
+    background-color: darkgrey;
+}
+
+.hidden{
+    display: none;
+}
+#modo-noche{
+    width: 50px;
+    height: 50px;
+}
+.modo-noche{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:4rem;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+}
+
+@media(min-width: 800px){
+    .modo-noche{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .menu{
+        flex-direction: row;
+    }
+}
+#botonDia{
+    width: 150px;
+    color:black;
+    font-size: x-large;
+    font-weight: 600;
+}
+.super{
+    background-image: url(/supermercado-bann.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.segurata{
+    background-image: url(/segurata.webp);
+    background-repeat: no-repeat;
+    background-size: cover;  
+    height: 50rem; 
+}
+
+.overlay{
+    position: fixed;
+    background-color: rgba(0,0,0,.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+
+    
+}
+img{
+    height: 60%;
+}
+
+.btn-cerrar{
+    width: 5rem;
+    height: 5rem;
+    background-color: rgba(255, 255, 255,.4);
+    display: grid;
+    place-items:center;
+    border-radius: 50%;
+    font-weight: 5rem;
+    font-size: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.btn-cerrar:hover{
+    background-color: rgba(255, 255, 255,.8);
+}
+
+.btn-cerrar:hover {
+    cursor:pointer;
+}
