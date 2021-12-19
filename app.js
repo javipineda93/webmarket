@@ -21,6 +21,7 @@ function iniciar(){
     modoNoche();
     mostrarImagenwp();
     mostrarImagenjl();
+    mostrarImagenqr();
 }
 
 
@@ -278,7 +279,7 @@ function mostrarImagenqr(){
     wd.addEventListener('click', ()=>{
         //generar la imagen
     const imagen = document.createElement('IMG');
-    imagen.src = `/wp.jpg`;
+    imagen.src = `/qr.png`;
     console.log(imagen);
 
     const overlay = document.createElement('DIV');
