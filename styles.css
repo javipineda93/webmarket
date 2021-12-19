@@ -219,13 +219,13 @@ h3{
     font-weight: 600;
 }
 .super{
-    background-image: url(/images/supermercado-bann.jpg);
+    background-image: url(webmarket/images/supermercado-bann.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .segurata{
-    background-image: url(/images/segurata.webp);
+    background-image: url(webmarket/images/segurata.webp);
     background-repeat: no-repeat;
     background-size: cover;  
     height: 50rem; 
